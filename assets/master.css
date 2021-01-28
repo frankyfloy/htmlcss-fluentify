@@ -7,14 +7,21 @@
 
 /* debug */
 header{
-    background-color: BLUE;
-    height: 400PX;
+    background-color: #0c325a;
+    height: 90vh;
 }
 
 
-/*----STRUTTURA-NAVBAR -----*/
+/* ---ROW-CLEARFIX */
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/*-------------STRUTTURA-NAVBAR -----------*/
 nav{
-    background-color: black;
     width: 100%;
     height: 80px;
     padding-top: 18px;
@@ -41,7 +48,6 @@ nav > div:last-child{
 
 img{
     vertical-align: middle;
-    /* line-height: 80px; */
     padding-bottom: 9px;
 }
 
@@ -54,16 +60,38 @@ nav ul{
 nav ul > li{
     display: inline-block;
     margin-left: 20px;
+
 }
 
 nav ul > li a{
-    font-size: 1em;
+    font-size: 11px;
     text-decoration: none;
     color: white;
 }
 
 
-/* --button-nav--*/
+/* -----SECTION-TITLE----*/
+
+.title{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.container-header{
+    height: 100%;
+    background: url('img/background-header.png') no-repeat;
+    background-size: 70%;
+    background-position: bottom right;
+
+}
+
+.title > h1{
+    font-size: 50px;
+}
+
+
+/* -------BUTTON------*/
 #registration button{
     display: inline-block;
     border-radius: 5px;
@@ -74,6 +102,7 @@ nav ul > li a{
 #button-login{
     padding: 5px 25px;
     background-color: rgba(0, 0, 0, 0);
+    border: solid white 1px;
 }
 
 #button-signing_up{
@@ -82,35 +111,49 @@ nav ul > li a{
 
 .container-buttons_nav{
     display: inline-block;
-    /* line-height: 80px; */
 }
 
+#button-signing_up-title{
+    padding: 20px 10px;
+    font-size: 1em;
+    border-radius: 10px;
+}
 
 
 /* Utility */
 
+.text-family-Rubik{
+    font-family: 'Rubik', sans-serif;
+}
+
+.text_white{
+    color: white;
+}
+
 .text_size-10px{
     font-size: 10px;
+    font-weight: bold;
 }
 
 .text_UpperCase{
     text-transform: uppercase;
 }
 
-.m-left_100px{
-    margin-left: 100px;
+.m-top_150px{
+    margin-top: 150px;
+}
+
+.m-left_150px{
+    margin-left: 150px;
 }
 .m-left_50px{
     margin-left: 50px;
 }
 
-.button-green{
-    background-color: green;
+.m-bottom_25px{
+    margin-bottom: 25px;
 }
 
-/*
-.row:after{
-    content: '';
-    display: table;
-    clear: both;
-} */
+.bg-green{
+    background-color: #7cbc27;
+}

@@ -6,7 +6,7 @@
 
 header{
     background-color: #0c325a;
-    /* height: 85vh; */
+    height: 70vh;
 }
 
 
@@ -46,7 +46,7 @@ nav > div:last-child{
     display: inline-block;
 }
 
-img{
+#logo > img{
     vertical-align: middle;
     padding-bottom: 9px;
 }
@@ -60,17 +60,12 @@ nav ul{
 nav ul > li{
     display: inline-block;
     margin-left: 20px;
-
 }
 
 nav ul > li a{
-    font-size: 11px;
     text-decoration: none;
     color: #ffffff;
 }
-
-
-
 
 /* -----SECTION-TITLE----*/
 
@@ -93,7 +88,6 @@ nav ul > li a{
 
 
 
-
 /* -----------MAIN------------- */
 
 .container-header-main{
@@ -111,10 +105,9 @@ nav ul > li a{
 
 
 
-
 /*----SECTION IMG-PATH COURSE---*/
 .col-33 > img{
-    width: 200px;
+    width: 50%;
     height: 180px;
 }
 
@@ -125,12 +118,26 @@ nav ul > li a{
 
 
 
+
 /* -----DISCOVER US SECTION----- */
 
-.col-60 > img{
-    width: 400px;
-    height: 400px;
+#img-mountain{
+    width: 100%;
+    height: 500px;
 }
+
+
+/* ------------FOOTER------------ */
+#row-footer{
+    height: 150px;
+}
+
+#row-footer:first-child, #row-footer:last-child{
+    height: 100%;
+    line-height: 150px;
+    vertical-align: middle;
+}
+
 
 
 
@@ -156,33 +163,49 @@ nav ul > li a{
     width: 60%;
 }
 
+.col-50{
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+
+
 
 /* -------BUTTON------*/
 #registration button{
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 8px;
     color: #ffffff;
 }
 
 #button-login{
-    padding: 5px 25px;
+    padding:10px 25px;
     background-color: rgba(0, 0, 0, 0);
     border: solid  1px;
 }
 
 #button-signing_up{
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 .container-buttons_nav{
     display: inline-block;
 }
 
-#button-signing_up-title{
+#button-signing_up-plan{
     padding: 20px 10px;
     font-size: 1em;
     border-radius: 10px;
 }
+
+#button-help{
+    position: fixed;
+    bottom: 0;
+    right: 8%;
+    padding: 10px 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 
 
 /* Utility */
@@ -196,9 +219,14 @@ nav ul > li a{
 }
 
 .bg-lightgrey{
-
     background-color: #d3d3d3;
 }
+
+
+.bg-transparent{
+    background-color: rgba(0, 0, 0, 0);
+}
+
 
 .text-color_green{
     color: #7cbc27;
@@ -217,13 +245,22 @@ nav ul > li a{
     color: #ffffff;
 }
 
-.text_size-10px{
-    font-size: 10px;
+.text_size-13px{
+    font-size: 13px;
+}
+
+.text_size-15px{
+    font-size: 15px;
     font-weight: bold;
 }
 
 .text_size-20px{
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text_size-40px{
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -243,12 +280,12 @@ nav ul > li a{
     margin-bottom: 50px;
 }
 
-.m-right_150px{
-    margin-right: 150px;
+.m-right_100px{
+    margin-right: 100px;
 }
 
-.m-left_150px{
-    margin-left: 150px;
+.m-left_100px{
+    margin-left: 100px;
 }
 .m-left_50px{
     margin-left: 50px;
@@ -270,10 +307,30 @@ nav ul > li a{
     margin-left: 25px;
 }
 
+.m-right_15px{
+    margin-right: 15px;
+}
+
 .p-bottom_25px{
     padding-bottom: 50px;
 }
 
 .p-top_25px{
     padding-top: 50px;
+}
+
+.p-right_100px{
+    padding-right: 100px;
+}
+
+.p-left_100px{
+    padding-left: 100px;
+}
+
+.p-right_20px{
+    padding-right: 50px;
+}
+
+.p-left_20px{
+    padding-left: 50px;
 }
